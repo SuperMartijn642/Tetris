@@ -1,13 +1,11 @@
 package SuperMartijn642.Tetris.Game;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
+import SuperMartijn642.Tetris.Game.Block.Block;
+import SuperMartijn642.Tetris.Main;
+
+import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
-
-import SuperMartijn642.Tetris.Main;
-import SuperMartijn642.Tetris.Game.Block.Block;
 
 public class Game {
 
@@ -33,8 +31,8 @@ public class Game {
 	public void startGame(){
 		this.init();
 		double deltaFps = 0;
-		double timePerFrame = 1000000000 / PREFERREDFPS;
-		double timePerTick = 1000000000 / PREFERREDTPS;
+		double timePerFrame = 1000000000D / PREFERREDFPS;
+		double timePerTick = 1000000000D / PREFERREDTPS;
 		double deltaTps = 0;
 		long now;
 		long lastTime = System.nanoTime();

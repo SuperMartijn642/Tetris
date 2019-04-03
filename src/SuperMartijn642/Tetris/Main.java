@@ -1,12 +1,10 @@
 package SuperMartijn642.Tetris;
 
-import java.awt.Canvas;
-import java.awt.Color;
-
-import javax.swing.JFrame;
-
 import SuperMartijn642.Tetris.Game.Game;
 import SuperMartijn642.Tetris.Game.KeyHandler;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 	
@@ -18,7 +16,8 @@ public class Main {
 	public static void main(String[] args) {
 		frame = new JFrame("Tetris");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(500, 1000);
+		int height = Toolkit.getDefaultToolkit().getScreenSize().height;
+		frame.setSize(height / 2,Toolkit.getDefaultToolkit().getScreenSize().height);
 		frame.setLocationRelativeTo(null);
 		frame.setUndecorated(true);
 		frame.setResizable(false);
